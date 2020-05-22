@@ -1,4 +1,6 @@
-from libmicrocontest import *
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
 import subprocess
 from bs4 import BeautifulSoup
 import re
