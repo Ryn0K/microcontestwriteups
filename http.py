@@ -1,4 +1,6 @@
-from libmicrocontest import *
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
 import subprocess,bs4
 def main():
     c = commence_contest(15,'kapslock','') # password in left blank
