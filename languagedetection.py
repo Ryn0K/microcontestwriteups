@@ -1,8 +1,11 @@
-import libmicrocontest,sys,os,subprocess
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
+import sys,os,subprocess
 from langid import classify
 
 def main():
-    con = libmicrocontest.commence_contest(37,'kapslock','kkbhargavmail58525852Kb@')
+    con = commence_contest(37,'kapslock','')
     txt1 = con.get_str('txt1')
     txt2 = con.get_str('txt2')
     txt3 = con.get_str('txt3')
