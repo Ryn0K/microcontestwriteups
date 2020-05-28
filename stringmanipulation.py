@@ -1,7 +1,10 @@
-import libmicrocontest,sys,os,time
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
+import sys,os,time
 
 def main():
-    con = libmicrocontest.commence_contest(42,'kapslock','')
+    con = commence_contest(42,'kapslock','')
     s1 = con.get_str('s1')
     s2 = con.get_str('s2')
     print('[+]s1 :: '+str(s1))
