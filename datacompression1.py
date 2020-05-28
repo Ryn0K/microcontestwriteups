@@ -1,4 +1,7 @@
-import libmicrocontest,sys,math,time,subprocess
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
+import sys,math,time,subprocess
 import string,re # to search for the common patterns of letters in string
 from collections import OrderedDict # to extract the repetitive letters in string
 import textwrap
@@ -23,7 +26,7 @@ def compressit(c):#if order not matter
         compress = compress+ str(times)+str(l)
     return compress    
 def main():
-    con = libmicrocontest.commence_contest(31,'kapslock','')
+    con = commence_contest(31,'kapslock','')
     compressor = con.get_str('donnees_a_compresser')
     decompressor = con.get_str('donnees_a_decompresser')
     print('[+]String to compress :: '+str(compressor))
