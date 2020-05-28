@@ -1,3 +1,5 @@
+#this script is under devolopment 
+#i think there is some bug in this challenge i donot even get email from microcontest to play with challenges
 #!/usr/bin/python
 #Written by krn_bhargav(kapslock)
 from libmicrocontest2_python27 import * # External library given by website should be in same directory.
