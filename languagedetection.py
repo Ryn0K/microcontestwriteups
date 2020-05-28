@@ -22,8 +22,8 @@ def main():
     l2 = lang2[0]
     l3 = lang3[0]
     l4 = lang4[0]
-    if l1 == 'nl':
-        l1 = 'du'
+    if l1 == 'nl':#langid module give different language code than microcontest so replace the language code with the microcontest one
+        l1 = 'du'#du ==> dutch ==> nl ==> du
     if l2 == 'nl':
         l2 = 'du'
     if l3 == 'nl':
