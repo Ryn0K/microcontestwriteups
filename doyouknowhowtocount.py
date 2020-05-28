@@ -1,7 +1,10 @@
-import libmicrocontest,sys,math,time,subprocess
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
+import sys,math,time,subprocess
 
 def main():
-    con = libmicrocontest.commence_contest(3,'kapslock','')
+    con = commence_contest(3,'kapslock','')  #your password for contest
     text = str(con.get_param('texte',str)).strip()
     mot = str(con.get_param('mot',str)).strip()
     print('[+]text :: '+text)
