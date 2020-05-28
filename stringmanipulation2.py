@@ -1,7 +1,10 @@
-import libmicrocontest,os,sys,time
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
+import os,sys,time
 
 def main():
-    con = libmicrocontest.commence_contest(43,'kapslock','')
+    con = commence_contest(43,'kapslock','')
     s1 = con.get_str('s')
     print('[+]s1 :: '+str(s1))
     s1_rev = s1[::-1] # reverse slicing method
