@@ -1,8 +1,11 @@
-import libmicrocontest,sys,os,subprocess,pytesseract
+#!/usr/bin/python
+#Written by krn_bhargav(kapslock)
+from libmicrocontest2_python27 import * # External library given by website should be in same directory.
+import sys,os,subprocess,pytesseract
 from PIL import Image
 
 def main():
-    con = libmicrocontest.commence_contest(20,'kapslock','')
+    con = commence_contest(20,'kapslock','')
     img = con.get_str('img')
     with open('img.png','w') as f:
         f.write(img)
