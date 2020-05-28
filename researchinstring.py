@@ -7,7 +7,7 @@ def main():
     con = commence_contest(16,'kapslock','')
     chaine = con.get_str('chaine')
     print('[+]chaine : '+str(chaine))
-    tofind = str(re.search('\d{3}.\d+',str(chaine)).group())
+    tofind = str(re.search('\d{3}.\d+',str(chaine)).group())#extract floating point number
     print('[+]Floating number :: '+str(tofind))
     con.append_answer('nombre',str(tofind))
     print(con.submit_answer())
